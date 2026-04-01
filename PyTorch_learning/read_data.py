@@ -19,3 +19,10 @@ class MyDataset(Dataset):
     def __len__(self):
         return len(self.img_path)
     
+root_dir = "Python\\study\\PyTorch_learning\\hymenoptera_data\\train"
+ant_label_dir = "ants"
+bee_label_dir = "bees"
+ant_dataset = MyDataset(root_dir,ant_label_dir)
+bee_dataset = MyDataset(root_dir,bee_label_dir)
+img , label = ant_dataset[1]
+img.show()
