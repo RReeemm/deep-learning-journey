@@ -102,4 +102,4 @@ if __name__ == '__main__':
     #dataset = LyricsDataset(corpus_idx, 5)
 
     #train()
-    evaluate('萤火虫',50)
+    evaluate('好',50)
